@@ -41,6 +41,13 @@ app.get('/about', (req, res) => {
   });
 })
 
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs', {
+    pageTitle: 'My dummy portfolio',
+    welcomeMessage: 'Welcome!',
+  });
+})
+
 app.listen(port, () => {
   console.log(`Warpgate locked on ${port}`);
 });
